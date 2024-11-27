@@ -111,8 +111,6 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                   
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->
@@ -153,29 +151,35 @@
 
                 <div class="dashboard-container">
                     <div class="card yellow">
-                      <div class="icon">
-                        <!-- Use any icon here, e.g. from FontAwesome -->
-                        <i class="fas fa-users"></i>
-                      </div>
-                      <div class="card-text">Data Siswa</div>
+                        <div class="icon">
+                            <!-- Use any icon here, e.g. from FontAwesome -->
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <button class="card-btn-yellow">
+                            <a href="" class="cart-text">Data Siswa</a>
+                        </button>                    
                     </div>
                 
                     <div class="card red">
-                      <div class="icon">
-                        <!-- Book icon for Kelas -->
-                        <i class="fas fa-book-open"></i>
-                      </div>
-                      <div class="card-text">Kelas</div>
-                    </div>
+                        <div class="icon">
+                            <!-- Book icon for Kelas -->
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <button class="card-btn-red">
+                            <a href="" class="cart-text"> Kelas</a>
+                        </button>                    </div>
                 
                     <div class="card purple">
-                      <div class="icon">
-                        <!-- Speech bubble icon for Quiz -->
-                        <i class="fas fa-comment-dots"></i>
-                      </div>
-                      <div class="card-text">Quiz</div>
+                        <div class="icon">
+                            <!-- Speech bubble icon for Quiz -->
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <button class="card-btn-purple">
+                            <a href="" class="cart-text">Quiz</a>
+                        </button>
+                        
                     </div>
-                  </div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -245,55 +249,72 @@
 
 
 <style>
+.dashboard-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    padding: 40px ; 
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-btn-yellow a,
+.card-btn-red a,
+.card-btn-purple a {
+color: black; 
+text-decoration: none; 
+}
+
+.card-btn-yellow a:hover,
+.card-btn-red a:hover,
+.card-btn-purple a:hover {
+  color: black; /* Menjaga warna teks hitam ketika hover */
+}
 
 
-    .dashboard-container {
-      width: 80%;
-      max-width: 1000px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+.card-btn-yellow {
+    background-color: #f4d03f; 
+    border-radius: 20px;
+}
 
-    .card {
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s;
-    }
+.card-btn-red {
+    background-color: #e74c3c; 
+    border-radius: 20px;
 
-    .card:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    }
+}
 
-    .icon {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
+.card-btn-purple {
+    background-color: #9b59b6; 
+    border-radius: 20px;
 
-    .card-text {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .card.yellow {
-      background-color: #f4d03f; /* Yellow for Data Siswa */
-    }
-
-    .card.red {
-      background-color: #e74c3c; /* Red for Kelas */
-    }
-
-    .card.purple {
-      background-color: #9b59b6; /* Purple for Quiz */
-    }
+}
   </style>
