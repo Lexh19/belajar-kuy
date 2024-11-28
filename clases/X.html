@@ -12,13 +12,13 @@
     <title>SB Admin 2 - Charts</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -310,25 +310,28 @@
                 <h1 class="title">Kelas</h1>
                 <div class="dashboard-container">
                     <div class="card">
+                        <img src="../img/MTK.png" alt="">
                         <button class="card-btn">
-                            <a href="./clases/X.html">
-                                <span class="roman-circle">X</span>
+                            <a href="">
+                                <span class="roman-circle">Matematika</span>
                             </a>
                         </button>
                     </div>
                 
                     <div class="card">
                         <button class="card-btn">
-                            <a href="XI.html">
-                                <span class="roman-circle">XI</span>
+                            <img src="../img/Kimia.png" alt="">
+                            <a href="">
+                                <span class="roman-circle">Kimia</span>
                             </a>
                         </button>
                     </div>
                 
                     <div class="card">
                         <button class="card-btn">
-                            <a href="./clases/XII.html">
-                                <span class="roman-circle">XII</span>
+                            <img src="../img/Sosio.png" alt="">
+                            <a href="">
+                                <span class="roman-circle">Sosiologi</span>
                             </a>
                         </button>
                     </div>
@@ -380,22 +383,19 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="js/demo/chart-bar-demo.js"></script>
+    
 
 </body>
 
@@ -420,7 +420,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 padding: 20px;
 text-align: center;
 width: 100%; 
-height: 150px; 
+height: 80%; 
 display: flex;
 justify-content: center;
 align-items: center;
@@ -431,6 +431,12 @@ transition: transform 0.3s ease;
 transform: translateY(-5px);
 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+.card img {
+    width: 80%;
+    height: 100%; 
+    max-height: 150px; 
+    object-fit: cover; 
+}
 
 .card-btn {
 background-color: transparent;
@@ -439,16 +445,5 @@ outline: none;
 cursor: pointer;
 }
 
-.roman-circle {
-display: inline-block;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background-color: #007bff;
-color: white;
-text-align: center;
-line-height: 40px;
-font-size: 18px;
-font-weight: bold;
-}
+
 </style>
