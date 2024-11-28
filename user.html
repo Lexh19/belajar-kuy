@@ -30,67 +30,69 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-           <!-- Sidebar Toggler (Sidebar) -->
-           <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggleTop">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggleTop">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0">
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
 
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
-        </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
 
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="about-us.html"
-                aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>About Us</span>
-            </a>
-        </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="about-us.html"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
 
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="user.html" 
-                aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>User</span>
-            </a>
-        </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="user.html" 
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>User</span>
+                </a>
+            </li>
 
 
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="class.html" 
-                aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Kelas</span>
-            </a>
-        </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="class.html" 
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Kelas</span>
+                </a>
+            </li>
 
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="quiz.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Quiz</span></a>
-        </li>
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="quiz.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Quiz</span></a>
+            </li>
 
-        <!-- Nav Item - Tables -->
-        <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Logout</span></a>
-        </li>
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Logout</span></a>
+            </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -308,28 +310,24 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <div class="container">
-                        <!-- Profile Card -->
-                        <div class="profile-card">
-                            <!-- Profile Image -->
-                            <div class="profile-header">
-                                <img src="img/undraw_profile.svg" alt="Profile" class="profile-image">
-                            </div>
-                
-                            <!-- Profile Info -->
+                    <div class="container py-5">
+                        <div class="row align-items-center">
+                          <!-- Kolom Gambar Profil -->
+                          <div class="col-12 col-md-4 text-center">
+                            <img src="profile-image.jpg" alt="Profile Picture" class="profile-image img-fluid">
+                          </div>
+                      
+                          <!-- Kolom Informasi Profil -->
+                          <div class="col-12 col-md-8">
                             <div class="profile-info">
-                                <h2 class="profile-name">Yudha Gento</h2>
-                                <p class="profile-role">Student</p>
-                                <p class="profile-email">yudha@example.com</p>
+                              <h2>Nama: John Doe</h2>
+                              <p><strong>Sekolah:</strong> SMK Negeri 1</p>
+                              <p><strong>Alamat:</strong> Jl. Raya No. 123, Jakarta</p>
+                              <p><strong>Nomor HP:</strong> 0812-3456-7890</p>
                             </div>
-                
-                            <!-- Settings & Logout -->
-                            <div class="profile-settings">
-                                <a href="#" class="btn">Settings</a>
-                                <a href="#" class="btn logout-btn">Logout</a>
-                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -392,83 +390,13 @@
 </html>
 
 <style>
-
-/* Profile Card */
-.container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-}
-
-.profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 30px;
-}
-
-.profile-header {
-    margin-bottom: 20px;
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #f4d03f;
-}
-
-.profile-info {
-    margin-bottom: 20px;
-}
-
-.profile-name {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin: 10px 0;
-}
-
-.profile-role {
-    font-size: 16px;
-    color: #888;
-}
-
-.profile-email {
-    font-size: 14px;
-    color: #555;
-}
-
-.profile-settings {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.btn {
-    background-color: #4e73df;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 14px;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #2e59d9;
-}
-
-.logout-btn {
-    background-color: #e74c3c;
-}
-
-.logout-btn:hover {
-    background-color: #c0392b;
-}
-
-</style>
+    /* Sesuaikan gaya jika diperlukan */
+    .profile-image {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .profile-info {
+      padding-left: 20px;
+    }
+  </style>
