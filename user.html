@@ -159,35 +159,45 @@
                         <div class="row align-items-center">
                           <!-- Kolom Gambar Profil -->
                           <div class="col-12 col-md-4 text-center">
-                            <img src="profile-image.jpg" alt="Profile Picture" class="profile-image img-fluid">
+                            <img src="./img/YUDA.jpg" alt="Profile Picture" class="profile-image img-fluid">
                           </div>
                       
                           <!-- Kolom Informasi Profil -->
-                          <div class="col-12 col-md-8">
-                            <div class="profile-info">
-                              <h2>Nama: John Doe</h2>
-                              <p><strong>Sekolah:</strong> SMK Negeri 1</p>
-                              <p><strong>Alamat:</strong> Jl. Raya No. 123, Jakarta</p>
-                              <p><strong>Nomor HP:</strong> 0812-3456-7890</p>
+                            <div class="col-12 col-md-8">
+                                <div class="label-container">
+                                    <div class="label-item">
+                                        <h4>NAMA</h4>
+                                        <div  class="label-text">
+                                            <span>Yuda Hendriansyah</span>
+                                        </div>
+                                    </div>
+                                    <div class="label-item">
+                                        <h4>SEKOLAH</h4>
+                                        <div  class="label-text">
+                                            <span>SMA Negeri 1 Ngluwar</span>
+                                        </div>       
+                                    </div>
+                                    <div class="label-item">
+                                        <h4>ALAMAT</h4>
+                                        <div  class="label-text">
+                                            <span>citrogaten</span>
+                                        </div> 
+                                    </div>
+                                    <div class="label-item">
+                                        <h4>NO HP</h4>
+                                        <div  class="label-text">
+                                            <span>08818541834</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -235,13 +245,62 @@
 </html>
 
 <style>
-    /* Sesuaikan gaya jika diperlukan */
     .profile-image {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
+      width: 40%;
     }
     .profile-info {
       padding-left: 20px;
     }
-  </style>
+
+    .label-container {
+        width: 50%;
+        border: 2px solid black;  
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 20px;
+        background-color: #f3f4f6;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 5px; 
+    }
+    
+    .label-item {
+        display: contents;
+    }
+    
+    .label-item h4 {
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+    
+    .label-text {
+        display: flex;
+        align-items: center;
+    }
+    
+    .label-text span {
+        border-radius: 15px;
+        border: 2px solid black;  
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        color: black;
+        
+    }
+    span{
+        text-align: center;
+
+    }
+    
+
+    h4 {
+        
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
